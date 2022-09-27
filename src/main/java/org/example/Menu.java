@@ -13,7 +13,7 @@ public class Menu {
 
     public static void menu(){
         scanner = new Scanner(System.in);
-        log.trace("Chose your convertor: \n" +
+        log.trace("Choose your convertor: \n" +
                 "1. Measure Convertor\n" +
                 "2. Time Convertor");
     try {

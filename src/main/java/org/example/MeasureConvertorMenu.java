@@ -20,7 +20,7 @@ public class MeasureConvertorMenu {
                 "1. Centimeters to Meters\n" +
                 "2. Meters to Millimeters\n" +
                 "3. Centimeters to Meters\n" +
-                "4, Meters to Centimeters");
+                "4. Meters to Centimeters");
         measureToConvert = scanner.nextInt();
 
         switch (measureToConvert){
@@ -52,7 +52,7 @@ public class MeasureConvertorMenu {
                     Menu.checkShutDown();
                     break;
                 }catch (InputMismatchException e){
-            log.error("Please enter a whole point number");
+            log.error("Please enter a whole number");
         }
             case 4 :
                 log.trace("Enter the Meters");
@@ -62,7 +62,7 @@ public class MeasureConvertorMenu {
                     Menu.checkShutDown();
                     break;
                 }catch (InputMismatchException e) {
-                    log.error("Please enter a whole point number");
+                    log.error("Please enter a whole number");
                 }
         }
     }
