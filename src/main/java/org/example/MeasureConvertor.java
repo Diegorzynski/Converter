@@ -12,7 +12,7 @@ public class MeasureConvertor {
     }
 
     public double metersToMillimeters(double meters){
-        return meters/1000;
+        return meters * 1000;
     }
 
     public double centimetersToMeters(double centimeters){
