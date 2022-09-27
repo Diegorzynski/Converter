@@ -1,0 +1,29 @@
+2022-09-27 14:07:00.298 [main] TRACE org.example.Main - Chose your convertor: 
+1. Measure Convertor
+2. Time Convertor
+2022-09-27 14:08:01.871 [main] TRACE org.example.Main - Chose your convertor: 
+1. Measure Convertor
+2. Time Convertor
+2022-09-27 14:08:44.579 [main] TRACE org.example.Main - Chose your convertor: 
+1. Measure Convertor
+2. Time Convertor
+2022-09-27 14:09:08.106 [main] TRACE org.example.Main - Chose your convertor: 
+1. Measure Convertor
+2. Time Convertor
+2022-09-27 14:09:09.602 [main] INFO  org.example.Main - Time
+2022-09-27 14:09:09.603 [main] TRACE org.example.TimeConvertorMenu - Chose the time measures to convert:
+1. Hours to Minutes
+2. Minutes to Seconds
+3. Seconds to Miliseconds.
+2022-09-27 14:09:16.571 [main] TRACE org.example.TimeConvertorMenu - Enter the hours
+2022-09-27 14:09:19.557 [main] TRACE org.example.TimeConvertorMenu - 300
+2022-09-27 14:16:47.458 [main] TRACE org.example.Main - Chose your convertor: 
+1. Measure Convertor
+2. Time Convertor
+2022-09-27 14:16:50.970 [main] TRACE org.example.MeasureConvertorMenu - Chose the time measures to convert:
+1. Centimeters to Minutes
+2. Meters to Milimeters
+3. Centimeters to Meters
+4, Meters to Centimeters
+2022-09-27 14:16:57.983 [main] TRACE org.example.MeasureConvertorMenu - Enter the Centimeters
+2022-09-27 14:17:02.474 [main] INFO  org.example.MeasureConvertorMenu - Result: 1.02
