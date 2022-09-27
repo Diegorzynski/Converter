@@ -3,9 +3,9 @@ package org.example;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class MeasureConvertor {
+public class MeasureConverter {
 
-    private static Logger log = LogManager.getLogger(MeasureConvertor.class);
+    private static Logger log = LogManager.getLogger(MeasureConverter.class);
 
     public double metersToCentimeters(double meters){
         return meters * 100;

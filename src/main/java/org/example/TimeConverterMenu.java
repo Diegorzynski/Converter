@@ -7,10 +7,10 @@ import org.apache.logging.log4j.Logger;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class TimeConvertorMenu {
+public class TimeConverterMenu {
     private static Scanner scanner = new Scanner(System.in);
-    private static Logger log = LogManager.getLogger(TimeConvertorMenu.class);
-    private static TimeConvertor timeConvertor = new TimeConvertor();
+    private static Logger log = LogManager.getLogger(TimeConverterMenu.class);
+    private static TimeConverter timeConverter = new TimeConverter();
     private static int typeToConvert;
 
     public static void menu() {
@@ -25,7 +25,7 @@ public class TimeConvertorMenu {
             log.trace("Enter the hours");
             try {
                 int hours = scanner.nextInt();
-                log.trace("Result in minutes: " + timeConvertor.hoursToMinutes(hours));
+                log.trace("Result in minutes: " + timeConverter.hoursToMinutes(hours));
                 Menu.checkShutDown();
             }catch (InputMismatchException e){
                 log.error("Please enter a whole number");
@@ -35,7 +35,7 @@ public class TimeConvertorMenu {
             log.trace("Enter the minutes");
             try {
                 int minutes = scanner.nextInt();
-                log.trace("Result in seconds: " + timeConvertor.minutesToSeconds(minutes));
+                log.trace("Result in seconds: " + timeConverter.minutesToSeconds(minutes));
                 Menu.checkShutDown();
             }catch (InputMismatchException e){
                 log.error("Please enter a whole number");
@@ -45,7 +45,7 @@ public class TimeConvertorMenu {
             log.trace("Enter the seconds");
             try {
                 int seconds = scanner.nextInt();
-                log.trace("Result in milliseconds: " + timeConvertor.secondsToMilliseconds(seconds));
+                log.trace("Result in milliseconds: " + timeConverter.secondsToMilliseconds(seconds));
                 Menu.checkShutDown();
             }catch (InputMismatchException e){
                 log.error("Please enter a whole number");

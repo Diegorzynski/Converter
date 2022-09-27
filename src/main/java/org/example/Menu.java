@@ -9,28 +9,28 @@ import java.util.Scanner;
 public class Menu {
     private static Logger log = LogManager.getLogger(Main.class);
     private static Scanner scanner = new Scanner(System.in);
-    public static int convertor;
+    public static int converter;
 
     public static void menu(){
         scanner = new Scanner(System.in);
-        log.trace("Choose your convertor: \n" +
-                "1. Measure Convertor\n" +
+        log.trace("Choose your converter: \n" +
+                "1. Measure Converter\n" +
                 "2. Time Convertor");
     try {
-        convertor = scanner.nextInt();
+        converter = scanner.nextInt();
     } catch (InputMismatchException e){
         log.warn("Please enter a whole number");
         menu();
         scanner.close();
     }
 
-        switch (convertor){
+        switch (converter){
 
             case 2 :
-                TimeConvertorMenu.menu();
+                TimeConverterMenu.menu();
                 break;
             case 1 :
-                MeasureConvertorMenu.menu();
+                MeasureConverterMenu.menu();
                 break;
         }
     }

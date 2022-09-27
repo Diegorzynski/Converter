@@ -6,12 +6,12 @@ import org.apache.logging.log4j.Logger;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class MeasureConvertorMenu {
+public class MeasureConverterMenu {
 
     private static Scanner scanner = new Scanner(System.in);
-    private static Logger log = LogManager.getLogger(MeasureConvertorMenu.class);
+    private static Logger log = LogManager.getLogger(MeasureConverterMenu.class);
 
-    private static MeasureConvertor measureConvertor = new MeasureConvertor();
+    private static MeasureConverter measureConverter = new MeasureConverter();
 
     private static int measureToConvert;
 
@@ -28,7 +28,7 @@ public class MeasureConvertorMenu {
                 log.trace("Enter the Centimeters");
                 try {
                     double centimeters = scanner.nextDouble();
-                    log.info("Result in meters: " + measureConvertor.centimetersToMeters(centimeters));
+                    log.info("Result in meters: " + measureConverter.centimetersToMeters(centimeters));
                     Menu.checkShutDown();
                     break;
                 }catch (InputMismatchException e){
@@ -38,7 +38,7 @@ public class MeasureConvertorMenu {
                 log.trace("Enter the Meters");
                 try {
                     double minutes = scanner.nextDouble();
-                    log.info("Result in millimeters: " + measureConvertor.metersToMillimeters(minutes));
+                    log.info("Result in millimeters: " + measureConverter.metersToMillimeters(minutes));
                     Menu.checkShutDown();
                     break;
                 }catch (InputMismatchException e){
@@ -48,7 +48,7 @@ public class MeasureConvertorMenu {
                 log.trace("Enter the Millimeters");
                 try {
                     int millimeters = scanner.nextInt();
-                    log.info("Result in millimeters: " + measureConvertor.millimetersToMeters(millimeters));
+                    log.info("Result in millimeters: " + measureConverter.millimetersToMeters(millimeters));
                     Menu.checkShutDown();
                     break;
                 }catch (InputMismatchException e){
@@ -58,7 +58,7 @@ public class MeasureConvertorMenu {
                 log.trace("Enter the Meters");
                 try {
                     double meters = scanner.nextDouble();
-                    log.info("Result: " + measureConvertor.metersToCentimeters(meters));
+                    log.info("Result: " + measureConverter.metersToCentimeters(meters));
                     Menu.checkShutDown();
                     break;
                 }catch (InputMismatchException e) {
