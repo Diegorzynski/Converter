@@ -11,7 +11,7 @@ public class TimeConvertor {
         return hours * 60;
     }
 
-    public int minutesToSeconds(int minutes){
+    public double minutesToSeconds(double minutes){
         return minutes / 60;
     }
 

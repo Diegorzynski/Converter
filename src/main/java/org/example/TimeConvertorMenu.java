@@ -24,15 +24,15 @@ public class TimeConvertorMenu {
         if (typeToConvert == 1) {
             log.trace("Enter the hours");
             int hours = scanner.nextInt();
-            log.trace(timeConvertor.hoursToMinutes(hours));
+            log.trace("Result in minutes: " +timeConvertor.hoursToMinutes(hours));
         } else if (typeToConvert == 2) {
             log.trace("Enter the minutes");
             int minutes = scanner.nextInt();
-            log.trace(timeConvertor.minutesToSeconds(minutes));
+            log.trace("Result in seconds: " +timeConvertor.minutesToSeconds(minutes));
         } else if (typeToConvert == 3) {
             log.trace("Enter the seconds");
             int seconds = scanner.nextInt();
-            log.trace(timeConvertor.minutesToSeconds(seconds));
+            log.trace("Result in miliseconds: " + timeConvertor.secondsToMiliseconds(seconds));
         }
     }
 }

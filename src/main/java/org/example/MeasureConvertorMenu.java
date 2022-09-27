@@ -26,17 +26,17 @@ public class MeasureConvertorMenu {
             case 1 :
                 log.trace("Enter the Centimeters");
                 double centimeters = scanner.nextDouble();
-                log.info("Result: " + measureConvertor.centimetersToMeters(centimeters));
+                log.info("Result in meters: " + measureConvertor.centimetersToMeters(centimeters));
                 break;
             case 2 :
                 log.trace("Enter the Meters");
                 double minutes = scanner.nextDouble();
-                log.info("Result: " + measureConvertor.metersToMilimeters(minutes));
+                log.info("Result in milimeters: " + measureConvertor.metersToMilimeters(minutes));
                 break;
             case 3 :
                 log.trace("Enter the Milimeters");
                 int milimeters = scanner.nextInt();
-                log.info("Result: " + measureConvertor.metersToMilimeters(milimeters));
+                log.info("Result in milimeters: " + measureConvertor.milimitersToMeters(milimeters));
                 break;
             case 4 :
                 log.trace("Enter the Meters");

@@ -27,3 +27,21 @@
 4, Meters to Centimeters
 2022-09-27 14:16:57.983 [main] TRACE org.example.MeasureConvertorMenu - Enter the Centimeters
 2022-09-27 14:17:02.474 [main] INFO  org.example.MeasureConvertorMenu - Result: 1.02
+2022-09-27 14:24:25.591 [main] TRACE org.example.Main - Chose your convertor: 
+1. Measure Convertor
+2. Time Convertor
+2022-09-27 14:24:27.744 [main] TRACE org.example.TimeConvertorMenu - Chose the time measures to convert:
+1. Hours to Minutes
+2. Minutes to Seconds
+3. Seconds to Miliseconds.
+2022-09-27 14:24:30.834 [main] TRACE org.example.TimeConvertorMenu - Enter the minutes
+2022-09-27 14:24:32.457 [main] TRACE org.example.TimeConvertorMenu - Result in seconds: 0
+2022-09-27 14:26:25.386 [main] TRACE org.example.Main - Chose your convertor: 
+1. Measure Convertor
+2. Time Convertor
+2022-09-27 14:26:27.592 [main] TRACE org.example.TimeConvertorMenu - Chose the time measures to convert:
+1. Hours to Minutes
+2. Minutes to Seconds
+3. Seconds to Miliseconds.
+2022-09-27 14:26:29.620 [main] TRACE org.example.TimeConvertorMenu - Enter the minutes
+2022-09-27 14:26:30.660 [main] TRACE org.example.TimeConvertorMenu - Result in seconds: 0.08333333333333333
