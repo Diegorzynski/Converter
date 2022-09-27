@@ -16,7 +16,7 @@ public class MeasureConverterMenu {
     private static int measureToConvert;
 
     public static void menu(){
-        log.trace("Chose the time measures to convert:\n" +
+        log.trace("Choose the time measures to convert:\n" +
                 "1. Centimeters to Meters\n" +
                 "2. Meters to Millimeters\n" +
                 "3. Centimeters to Meters\n" +

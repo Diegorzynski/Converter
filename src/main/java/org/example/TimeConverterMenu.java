@@ -15,7 +15,7 @@ public class TimeConverterMenu {
 
     public static void menu() {
 
-        log.trace("Chose the time measures to convert:\n" +
+        log.trace("Choose the time measures to convert:\n" +
                 "1. Hours to Minutes\n" +
                 "2. Minutes to Seconds\n" +
                 "3. Seconds to Milliseconds.");
