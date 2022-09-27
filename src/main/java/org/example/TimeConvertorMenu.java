@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TimeConvertorMenu {
@@ -22,19 +23,34 @@ public class TimeConvertorMenu {
 
         if (typeToConvert == 1) {
             log.trace("Enter the hours");
-            int hours = scanner.nextInt();
-            log.trace("Result in minutes: " +timeConvertor.hoursToMinutes(hours));
-            Menu.checkShutDown();
+            try {
+                int hours = scanner.nextInt();
+                log.trace("Result in minutes: " + timeConvertor.hoursToMinutes(hours));
+                Menu.checkShutDown();
+            }catch (InputMismatchException e){
+                log.error("Please enter a whole number");
+                menu();
+            }
         } else if (typeToConvert == 2) {
             log.trace("Enter the minutes");
-            int minutes = scanner.nextInt();
-            log.trace("Result in seconds: " +timeConvertor.minutesToSeconds(minutes));
-            Menu.checkShutDown();
+            try {
+                int minutes = scanner.nextInt();
+                log.trace("Result in seconds: " + timeConvertor.minutesToSeconds(minutes));
+                Menu.checkShutDown();
+            }catch (InputMismatchException e){
+                log.error("Please enter a whole number");
+                menu();
+            }
         } else if (typeToConvert == 3) {
             log.trace("Enter the seconds");
-            int seconds = scanner.nextInt();
-            log.trace("Result in milliseconds: " + timeConvertor.secondsToMilliseconds(seconds));
-            Menu.checkShutDown();
+            try {
+                int seconds = scanner.nextInt();
+                log.trace("Result in milliseconds: " + timeConvertor.secondsToMilliseconds(seconds));
+                Menu.checkShutDown();
+            }catch (InputMismatchException e){
+                log.error("Please enter a whole number");
+                menu();
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ package org.example;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MeasureConvertorMenu {
@@ -25,28 +26,44 @@ public class MeasureConvertorMenu {
         switch (measureToConvert){
             case 1 :
                 log.trace("Enter the Centimeters");
-                double centimeters = scanner.nextDouble();
-                log.info("Result in meters: " + measureConvertor.centimetersToMeters(centimeters));
-                Menu.checkShutDown();
-                break;
+                try {
+                    double centimeters = scanner.nextDouble();
+                    log.info("Result in meters: " + measureConvertor.centimetersToMeters(centimeters));
+                    Menu.checkShutDown();
+                    break;
+                }catch (InputMismatchException e){
+                    log.error("Please enter a valid floating point number");
+                }
             case 2 :
                 log.trace("Enter the Meters");
-                double minutes = scanner.nextDouble();
-                log.info("Result in millimeters: " + measureConvertor.metersToMillimeters(minutes));
-                Menu.checkShutDown();
-                break;
+                try {
+                    double minutes = scanner.nextDouble();
+                    log.info("Result in millimeters: " + measureConvertor.metersToMillimeters(minutes));
+                    Menu.checkShutDown();
+                    break;
+                }catch (InputMismatchException e){
+                    log.error("Please enter a valid floating point number");
+                }
             case 3 :
                 log.trace("Enter the Millimeters");
-                int millimeters = scanner.nextInt();
-                log.info("Result in millimeters: " + measureConvertor.millimetersToMeters(millimeters));
-                Menu.checkShutDown();
-                break;
+                try {
+                    int millimeters = scanner.nextInt();
+                    log.info("Result in millimeters: " + measureConvertor.millimetersToMeters(millimeters));
+                    Menu.checkShutDown();
+                    break;
+                }catch (InputMismatchException e){
+            log.error("Please enter a whole point number");
+        }
             case 4 :
                 log.trace("Enter the Meters");
-                double meters = scanner.nextDouble();
-                log.info("Result: " + measureConvertor.metersToCentimeters(meters));
-                Menu.checkShutDown();
-                break;
+                try {
+                    double meters = scanner.nextDouble();
+                    log.info("Result: " + measureConvertor.metersToCentimeters(meters));
+                    Menu.checkShutDown();
+                    break;
+                }catch (InputMismatchException e) {
+                    log.error("Please enter a whole point number");
+                }
         }
     }
 }
