@@ -2,6 +2,8 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
@@ -10,11 +12,17 @@ public class Menu {
     public static int convertor;
 
     public static void menu(){
+        scanner = new Scanner(System.in);
         log.trace("Chose your convertor: \n" +
                 "1. Measure Convertor\n" +
                 "2. Time Convertor");
-
+    try {
         convertor = scanner.nextInt();
+    } catch (InputMismatchException e){
+        log.warn("Please enter a whole number");
+        menu();
+        scanner.close();
+    }
 
         switch (convertor){
 
