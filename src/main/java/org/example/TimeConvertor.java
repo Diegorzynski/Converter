@@ -6,7 +6,6 @@ import org.apache.logging.log4j.Logger;
 public class TimeConvertor {
 
     private static Logger log = LogManager.getLogger(TimeConvertor.class);
-
     public int hoursToMinutes(int hours){
         return hours * 60;
     }
@@ -15,7 +14,7 @@ public class TimeConvertor {
         return minutes / 60;
     }
 
-    public int secondsToMiliseconds(int seconds){
+    public int secondsToMilliseconds(int seconds){
         return seconds * 1000;
     }
 }

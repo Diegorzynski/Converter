@@ -11,7 +11,7 @@ public class MeasureConvertor {
         return meters * 100;
     }
 
-    public double metersToMilimeters(double meters){
+    public double metersToMillimeters(double meters){
         return meters/1000;
     }
 
@@ -19,7 +19,7 @@ public class MeasureConvertor {
         return centimeters/100;
     }
 
-    public double milimitersToMeters(int milimeters){
-        return milimeters / 1000;
+    public double millimetersToMeters(int millimeters){
+        return millimeters / 1000;
     }
 }

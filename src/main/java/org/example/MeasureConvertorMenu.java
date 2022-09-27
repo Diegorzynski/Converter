@@ -16,8 +16,8 @@ public class MeasureConvertorMenu {
 
     public static void menu(){
         log.trace("Chose the time measures to convert:\n" +
-                "1. Centimeters to Minutes\n" +
-                "2. Meters to Milimeters\n" +
+                "1. Centimeters to Meters\n" +
+                "2. Meters to Millimeters\n" +
                 "3. Centimeters to Meters\n" +
                 "4, Meters to Centimeters");
         measureToConvert = scanner.nextInt();
@@ -27,24 +27,26 @@ public class MeasureConvertorMenu {
                 log.trace("Enter the Centimeters");
                 double centimeters = scanner.nextDouble();
                 log.info("Result in meters: " + measureConvertor.centimetersToMeters(centimeters));
+                Menu.checkShutDown();
                 break;
             case 2 :
                 log.trace("Enter the Meters");
                 double minutes = scanner.nextDouble();
-                log.info("Result in milimeters: " + measureConvertor.metersToMilimeters(minutes));
+                log.info("Result in millimeters: " + measureConvertor.metersToMillimeters(minutes));
+                Menu.checkShutDown();
                 break;
             case 3 :
-                log.trace("Enter the Milimeters");
-                int milimeters = scanner.nextInt();
-                log.info("Result in milimeters: " + measureConvertor.milimitersToMeters(milimeters));
+                log.trace("Enter the Millimeters");
+                int millimeters = scanner.nextInt();
+                log.info("Result in millimeters: " + measureConvertor.millimetersToMeters(millimeters));
+                Menu.checkShutDown();
                 break;
             case 4 :
                 log.trace("Enter the Meters");
                 double meters = scanner.nextDouble();
                 log.info("Result: " + measureConvertor.metersToCentimeters(meters));
+                Menu.checkShutDown();
                 break;
         }
-
     }
-
 }
